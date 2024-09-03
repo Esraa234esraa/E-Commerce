@@ -17,9 +17,10 @@ import Loading from './Components/Loading';
 import WishList from './Components/WishList';
 import Products from './Components/Products';
 export default function App() {
-  const ProductDetails = lazy(() => import('./Components/ProductDetails'));
-  const Cart = lazy(() => import('./Components/Cart'));
-  const BrandDetails = lazy(() => import('./Components/BrandDetails'));
+ const ProductDetails = lazy(() => import('./Components/ProductDetails'));
+const Cart = lazy(() => import('./Components/Cart'));
+const BrandDetails = lazy(() => import('./Components/BrandDetails'));
+
 
 
   const routers = createHashRouter([{
