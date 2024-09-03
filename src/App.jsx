@@ -16,10 +16,11 @@ import Orders from './Components/Orders';
 import Loading from './Components/Loading';
 import WishList from './Components/WishList';
 import Products from './Components/Products';
+import ProductDetails from './Components/ProductDetails';
+import Cart from './Components/Cart';
+import BrandDetails from './Components/BrandDetails';
+
 export default function App() {
- const ProductDetails = lazy(() => import('./Components/ProductDetails'));
-const Cart = lazy(() => import('./Components/Cart'));
-const BrandDetails = lazy(() => import('./Components/BrandDetails'));
 
 
 
@@ -33,14 +34,14 @@ const BrandDetails = lazy(() => import('./Components/BrandDetails'));
       { path: 'forgetpassword', element: <ForgetPassword /> },
       { path: 'verifycode', element: <VerifyCode /> },
       { path: 'createnewpassword', element: <CreateNewPassword /> },
-      { path: 'productdetails/:id/:categoryId', element: <ProtectedRoute>  <Suspense fallback={<Loading />}><ProductDetails /></Suspense></ProtectedRoute> },
-      { path: 'branddetails/:id', element: <ProtectedRoute>  <Suspense fallback={<Loading />}><BrandDetails /></Suspense></ProtectedRoute> },
+      { path: 'productdetails/:id/:categoryId', element: <ProtectedRoute>  <ProductDetails /></ProtectedRoute> },
+      { path: 'branddetails/:id', element: <ProtectedRoute> <BrandDetails /></ProtectedRoute> },
 
       { path: 'products', element: <ProtectedRoute>   <Products /> </ProtectedRoute > },
       { path: 'displayproducts', element: <ProtectedRoute> <DisplayProducts /></ProtectedRoute> },
       { path: '/allorders', element: <ProtectedRoute> <Orders /></ProtectedRoute> },
 
-      { path: 'cart', element: <ProtectedRoute>  <Suspense fallback={<Loading />}><Cart /></Suspense> </ProtectedRoute> },
+      { path: 'cart', element: <ProtectedRoute>  <Cart /></ProtectedRoute> },
       { path: 'brand', element: <ProtectedRoute> <Brand /> </ProtectedRoute> },
       { path: 'wishlist', element: <ProtectedRoute> <WishList /> </ProtectedRoute> },
 
