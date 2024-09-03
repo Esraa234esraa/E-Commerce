@@ -5,11 +5,11 @@
 @import 'flowbite-react/dist/flowbite-react.min.css';
 
 .container {
-    @apply p-4 rounded-lg w-[85%] m-auto;
+    @apply p-4 rounded-lg w-[90%] m-auto;
 }
 
 .row {
-    @apply flex flex-wrap mb-10 gap-3
+    @apply flex flex-wrap mb-10 gap-1
 }
 
 .product:hover {}
