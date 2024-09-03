@@ -64,7 +64,7 @@ export default function Item({ prod }) {
         <Loading />
     }
     return (
-        <div className='flex-nowrap lg:w-1/6 md:w-1/4 sm:w-1/2 mt-20'>
+        <div className='flex-nowrap lg:w-1/5 gap-1 md:w-1/4 sm:w-1/2 mt-20'>
             <Helmet>
                 <title>Products </title>
                 <meta name="description" content="استمتع بتجربة تسوق سهلة ومريحة مع تطبيقنا للتجارة الإلكترونية. اكتشف أحدث العروض والمنتجات المتوفرة لدينا الآن!" />
