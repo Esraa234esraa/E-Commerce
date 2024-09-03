@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> f59b8ba1e8dbc67cad54cf62b841ded8c7a272c7
 import React, { useEffect, useState } from 'react'
 import { getProducts } from '../APIS/getProducts'
 import Loading from './Loading'
@@ -53,8 +49,4 @@ export default function DisCat({ arr }) {
         </div>
     </>
     )
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f59b8ba1e8dbc67cad54cf62b841ded8c7a272c7
