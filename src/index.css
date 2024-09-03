@@ -9,7 +9,7 @@
 }
 
 .row {
-    @apply flex flex-wrap mb-10ك
+    @apply flex flex-wrap mb-10;
 }
 
 .product:hover {}
