@@ -5,7 +5,7 @@
 @import 'flowbite-react/dist/flowbite-react.min.css';
 
 .container {
-    @apply p-4 rounded-lg w-[85%] m-auto;
+    @apply p-4 rounded-lg w-[85%] m-auto my-5;
 }
 
 .row {
