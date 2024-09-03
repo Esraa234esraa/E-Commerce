@@ -9,7 +9,7 @@
 }
 
 .row {
-    @apply flex flex-wrap mb-10 gap-1
+    @apply flex flex-wrap mb-10ك
 }
 
 .product:hover {}
