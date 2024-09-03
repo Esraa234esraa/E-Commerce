@@ -14,7 +14,7 @@ export default function Layout() {
     return (
         <div className='parent'>
             <Navbar />
-            <button onClick={toggleDarkMode} style={{ display: 'flex', fontSize: '24px', margin: '10px',width:'100px' }}>
+            <button onClick={toggleDarkMode} style={{ display: 'flex', fontSize: '24px', margin: '10px',width:'50px' }}>
                 {isDarkMode ? (
                     <i className='fa fa-sun'></i>
                 ) : (
