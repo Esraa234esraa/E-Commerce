@@ -49,9 +49,11 @@ export default function Navbar() {
           <div>
 
             <ul className={`lg:flex gap-4 ${open ? '' : 'hidden'}`}>
-              <li className='mt-5 md:mt-0 '>           <NavLink to={'/cart'}><i className='fa fa-cart-shopping'></i> <span className='bg-green-600 text-white px-2 py-[.2rem] border rounded-full'>{data?.numOfCartItems}</span>  </NavLink>
+            
+              {isAuthenticated ? <>
+                  <li className='mt-5 md:mt-0 '>           <NavLink to={'/cart'}><i className='fa fa-cart-shopping'></i> <span className='bg-green-600 text-white px-2 py-[.2rem] border rounded-full'>{data?.numOfCartItems}</span>  </NavLink>
               </li>
-              {isAuthenticated ? <> <li className='text-red-600 font-bold cursor-pointer ' onClick={logout} >Logout </li> {isAuthenticated ? <b className='text-green-700'>hi ,{isAuthenticated.name}</b> : ''} <li className='flex gap-3'>
+                <li className='text-red-600 font-bold cursor-pointer ' onClick={logout} >Logout </li> {isAuthenticated ? <b className='text-green-700'>hi ,{isAuthenticated.name}</b> : ''} <li className='flex gap-3'>
                 <a href=""><i className='fab fa-facebook'></i></a>
                 <a href=""><i className='fab fa-twitter'></i></a>
                 <a href=""><i className='fab fa-google'></i></a>
